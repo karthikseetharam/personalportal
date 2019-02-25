@@ -1,0 +1,37 @@
+#outer {
+   margin:auto; 
+   display: block;
+   max-width: 1200px;
+}
+
+#name{
+    font-size: 50px;size: 100%;text-align: center; text-decoration-style: dotted;
+}
+
+#menuheader{
+    border-color:rgb(37, 37,86);border-style: solid;text-align:center;
+}
+
+.tbldata{
+    width: 20%;font-weight: bold;text-align-last: center;color: rgb(37, 37,86); 
+    
+}
+
+td.tbldata:hover{
+    background-color:antiquewhite;
+}
+
+
+.spacer{
+padding: 10px
+}
+
+#menubar{
+    
+}
+
+.contenttable{
+    width: 20%;
+}
+
+
