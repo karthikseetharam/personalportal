@@ -26,13 +26,13 @@
 .navitem a{
 	text-decoration: none;
 	display: block;
-	font-weight: bold;
+	font: bold 1.4em 'Markazi Text', serif;
 	color:#252556;
 	width: 130%;
 	text-align: center;
 	border-radius: 8px;
-	font-family: 'Markazi Text', serif;
-	font-size: 1.4em;
+	/*font-family: 'Markazi Text', serif;
+	font-size: 1.4em;*/
 
 }
 
@@ -43,20 +43,17 @@
 
 hr{
 	clear: both;
-
 }
 
 .herobody{
 	float: left;
 	width: 50%;
-	margin-top: 50px;
-	font-family: 'Markazi Text', serif;
-	font-size: 1.3em;
+	font: 1.3em 'Markazi Text', serif;
+	/*font-size: 1.3em;*/
 }
 
 .heroface{
 	float: right;
-	margin-top: 50px;
 	margin-right: 30px;
 	border:3px;
 	border-style: groove;
@@ -64,29 +61,20 @@ hr{
 .highlighter{
 	color: red;
 }
-.tbldata{
-    width: 20%;
-    font-weight: bold;
-    text-align-last: center;
-    color: rgb(37, 37,86);    
-}
-
-td.tbldata:hover{
-    background-color:antiquewhite;
-}
-
-
 .spacer{
 clear: both;
 margin-top: 40px;
 }
 
-#menubar{
-    
+h3 {
+	text-align: center;
+	font: 1.4em 'Markazi Text', serif;
+	background: grey;
 }
 
-.contenttable{
-    width: 20%;
+header::after{
+	content: "";
+	display: table;
+	clear: both;
+	margin-bottom: 50px;
 }
-
-
