@@ -72,13 +72,13 @@ hr{
 .highlighter{
 	color: red;
 }
-.spacer{
-clear: both;
-margin-top: 40px;
+.bottomspacer{
+margin-bottom: 20px;
 }
 
 .gridcontainer{
 	width: 1200px;
+	background: #F1EFEE;
 }
 
 .gridheader{
@@ -95,7 +95,6 @@ margin-top: 40px;
 	box-sizing: border-box;
 	height: 200px;
 	text-align:center;
-
 }
 
 
@@ -116,4 +115,5 @@ header::after{
 	clear: both;
 	margin-bottom: 50px;
 }
+
 
