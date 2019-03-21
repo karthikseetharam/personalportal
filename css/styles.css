@@ -81,11 +81,11 @@ margin-top: 40px;
 	width: 1200px;
 }
 
-.gridcontainer p{
+.gridheader{
 	margin: 20px auto;
 	font: 1.4em 'Markazi Text', serif;
 	text-align: center;
-	text-decoration:underline;
+	text-decoration: underline;
 }
 
 .clgrid {
