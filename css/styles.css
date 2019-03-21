@@ -4,6 +4,10 @@
    max-width: 1200px;
 }
 
+*{
+	font:'Markazi Text', serif;
+}
+
 #logo{
     size: 50%;
     float: left
@@ -73,6 +77,33 @@ clear: both;
 margin-top: 40px;
 }
 
+.gridcontainer{
+	width: 1200px;
+}
+
+.gridcontainer p{
+	margin: 20px auto;
+	font: 1.4em 'Markazi Text', serif;
+	text-align: center;
+	text-decoration:underline;
+}
+
+.clgrid {
+	width: 33%;
+	margin: 0 auto;
+	float: left;
+	box-sizing: border-box;
+	height: 200px;
+	text-align:center;
+
+}
+
+
+.clgrid a{
+	text-decoration: none;
+}
+
+
 h3 {
 	text-align: center;
 	font: 1.4em 'Markazi Text', serif;
@@ -85,3 +116,4 @@ header::after{
 	clear: both;
 	margin-bottom: 50px;
 }
+
