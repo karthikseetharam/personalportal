@@ -116,4 +116,17 @@ header::after{
 	margin-bottom: 50px;
 }
 
+.followme{
+	
+}
 
+.followme p{
+	text-align: center;
+	font: 1.4em 'Markazi Text', serif;
+}
+
+.gridcol::after{
+content: ""
+display:table;
+clear: both;
+}
