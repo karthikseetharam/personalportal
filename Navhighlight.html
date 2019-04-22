@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nav</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+
+		body {margin:0;}
+
+		.verticalheader {
+			width: 100%;
+			background-color: #555;
+			overflow: auto;
+			position: relative;
+			z-index: 15;
+		}
+
+		.verticalheader a {
+			float: left;
+			width: 20%;
+			padding: 12px, 0;
+			text-align: center;
+			transition: all 0.3s ease;
+			color: white;
+			font-size: 36px;
+		}
+
+		.active {
+			background-color: green;
+		}
+
+		.verticalheader a:hover{
+			color: black;
+			background-color: grey;	
+
+		}
+
+		.parent {
+			position: absolute;
+			z-index: 10;
+		}
+
+		.parent img {
+			max-width: 100%;
+			position: relative;
+			top: -400px;
+			z-index: -1;
+		}
+
+		.child{
+			position: absolute;
+			top: 400px;
+			color: white;
+			font-size: 36px;
+			left: 600px;
+			border: 2px solid white;
+			padding: 0 15px;
+			border-radius: 25%;
+			background-color: black;
+		}
+
+
+		.child span {
+			visibility: none;
+			position: absolute;
+			top: -90px;
+		}
+
+		.child:hover span{
+			visibility: none;
+			color: red;
+		}
+		
+	</style>
+
+</head>
+<body>
+<div class=verticalheader>
+
+
+<a href="#" class="active">  <i class="fa fa-home"></i>  </a>
+<a href="#">  <i class="fa fa-search"></i>  </a>
+<a href="#">  <i class="fa fa-envelope"></i>  </a>
+<a href="#">  <i class="fa fa-globe"></i>  </a>
+<a href="#">  <i class="fa fa-trash"></i>  </a>
+
+
+
+</div>
+
+
+<div class="parent">
+<img src="images/Mountains.jpg">
+
+<div class="child">
+	<p> Nature cures everything</p>
+	<span> click here to know more >> </span>
+</div>
+
+</div>
+
+</body>
+</html>

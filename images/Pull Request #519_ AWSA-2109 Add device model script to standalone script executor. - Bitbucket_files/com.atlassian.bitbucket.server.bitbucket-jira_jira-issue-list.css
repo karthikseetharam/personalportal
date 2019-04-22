@@ -1,0 +1,37 @@
+/* module-key = 'com.atlassian.bitbucket.server.bitbucket-jira:jira-issue-list', location = '/bitbucket-plugin-jira/internal/feature/jira/issue-list/jira-issue-list.less' */
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+ul.jira-issue-list {
+  list-style-type: none;
+  padding: 0;
+}
+ul.jira-issue-list li,
+.jira-issue-list-trigger-item {
+  border-top: 1px solid #ccc;
+  padding: 10px 7px;
+}
+ul.jira-issue-list li:first-child,
+.jira-issue-list-trigger-item:first-child {
+  margin-top: 10px;
+}
+ul.jira-issue-list li:last-child,
+.jira-issue-list-trigger-item:last-child {
+  padding-bottom: 0;
+}
+ul.jira-issue-list li .aui-icon,
+.jira-issue-list-trigger-item .aui-icon {
+  padding-right: 5px;
+  vertical-align: top;
+}
+ul.jira-issue-list li .aui-icon:before,
+.jira-issue-list-trigger-item .aui-icon:before {
+  color: #707070;
+}
+
+/*# sourceMappingURL=/download/batch/com.atlassian.bitbucket.server.bitbucket-jira:jira-issue-list/com.atlassian.bitbucket.server.bitbucket-jira:jira-issue-list.css.map?_statichash=63e757b7101fe8890971a7c69d734263-CDN%2F-1609296852%2Fcad3c23%2F10%2F5.6.6 */

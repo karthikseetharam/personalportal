@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		CSS positioning
+	</title>
+</head>
+<style type="text/css">
+	
+	.parent{
+		background-color: aqua;
+		height: 500px;
+		width: 500px;
+		padding: 5px;
+		position: relative;
+
+	}
+
+	/*.parent p{
+		position: relative;
+		z-index: 10;
+	}
+*/
+
+	.fina{
+		position: relative;
+	}
+	.inner{
+			background: red;
+			width: 100px;
+			height: 100px;
+			position: absolute;
+		
+}
+
+
+
+
+</style>
+<body>
+
+<div class="parent">
+	<p class="first">
+		first line
+	</p>
+	<div class="inner">
+		
+	</div>
+	<p class="fina">
+		last line
+	</p>
+</div>
+
+</body>
+</html>

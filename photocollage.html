@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photo collage</title>
+</head>
+<style type="text/css">
+
+	.gallerycontainer-wrap{
+		max-width: 100%;
+		position: relative;
+	}
+	
+	.gallerycontainer-wrap ul{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas: 'four five one one two' 'six six one one three';
+		grid-gap: 5px;
+		position: relative;
+		float: left;
+		list-style-type: none;
+
+	}
+
+	.gallerycontainer-wrap img{
+		max-width: 200px;
+		max-height: 200px;
+
+	}
+</style>
+
+<body>
+<div class="gallerycontainer-wrap">
+	
+	<ul class="gallerygrid-items">
+		<li class="gallerygrid-items-item"> <img src="images/1.jpeg"> </li>
+		<li class="gallerygrid-items-item"> <img src="images/2.jpeg"> </li>
+		<li class="gallerygrid-items-item"> <img src="images/3.jpeg"> </li>
+		<li class="gallerygrid-items-item"> <img src="images/4.jpeg"> </li>
+
+		<li class="gallerygrid-items-item"> <img src="images/5.jpeg"> </li>
+
+
+	</ul>
+
+
+
+</div>
+
+
+</body>
+</html>

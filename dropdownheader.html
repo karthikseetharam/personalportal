@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drop down</title>
+</head>
+
+<style type="text/css">
+	
+*{
+	margin: 0;
+	padding:0;
+}
+
+.wrapper{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.nav-main-items{
+	position: relative;
+	display: inline-block;
+	align-self: center;
+	width: 130px;
+	height: 30px;
+	list-style-type: none;
+	background-color: grey;
+	border: 2px solid grey;
+	border-radius: 25px;
+}
+
+.nav-main-items a{
+	display: block;
+	text-align: center;
+	line-height: 30px;
+
+}
+
+.nav-sub1{
+	position: absolute;
+	top: 30px;
+	list-style-type: none;
+	display: none;
+
+}
+
+.nav-sub1 li{
+	/*border: 2px solid red;*/
+	width: 130px;
+	border: 2px solid grey;
+	border-radius: 25px;
+	background-color: grey;
+	margin: 5px 0;
+}
+
+.nav-sub2{
+	position: absolute;
+	top: 78px;
+	left:130px;
+	list-style-type: none;
+	display: none;
+	margin-left: 5px;
+
+}
+
+.nav-main-items:hover .nav-sub1{
+	display: block;
+}
+
+.nav-sub1 li:hover .nav-sub2{
+	display: block;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	color: black;
+}
+
+</style>
+
+<body>
+
+<div class="wrapper">
+<ul class="nav-main">
+	<li class="nav-main-items"> <a href="#"> Header1 </a></li>
+	<li class="nav-main-items"> <a href="#"> Header2 </a>
+		<ul class="nav-sub1">
+		<li> <a href="#"> Header 2.1 </a></li>
+		<li> <a href="#"> Header 2.2 </a></li>
+		<li> <a href="#"> Header 2.3 </a>
+			<ul class="nav-sub2">
+				<li> <a href="#"> Header 2.11 </a></li>
+				<li> <a href="#"> Header 2.12 </a></li>
+				<li> <a href="#"> Header 2.13 </a></li>
+
+			</ul>
+
+
+		</li>
+		</ul>
+	</li>
+	<li class="nav-main-items"> <a href="#"> Header3 </a> </li>
+	<li class="nav-main-items"> <a href="#"> Header4 </a> </li>
+	<li class="nav-main-items"> <a href="#"> Header5 </a> </li>
+	<li class="nav-main-items"> <a href="#"> Header6 </a> </li>
+</ul>
+
+</div>
+</body>
+</html>
