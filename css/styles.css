@@ -81,7 +81,8 @@ margin-bottom: 20px;
 
 .gridcontainer{
 	width: 100%;
-	background-image: url("../images/giftly.png");
+	/*background-image: url("../images/giftly.png");*/
+	background-color: #F1EFEE;
 }
 
 .gridheader{
@@ -133,3 +134,31 @@ header::after{
 	font: 1.4em 'Markazi Text', serif;
 }
 
+.grid-container{
+	display: grid;
+	grid-template-columns: 30% 40% 30%;
+  	grid-template-rows: 40% 60%;
+  	grid-gap: 10px;
+}
+
+.grid_item:first-child {
+	grid-column: 1 / 2;
+}
+
+.grid_item:nth-child(3){
+	background-color: black;
+
+}
+
+.grid_item p{	
+	color: white;
+	padding: 10px 10px;
+}
+
+.books{
+	float: right;
+}
+
+.books li{
+	list-style-position: inside;
+}
