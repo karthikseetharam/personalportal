@@ -6,7 +6,6 @@
 
 *{
 	font:'Markazi Text', serif;
-	box-sizing: border-box;
 }
 
 #logo{
@@ -21,32 +20,30 @@
 
 #menuheader{
    size:50%;
-   float: left;   
+   float: left;
+   
 }
-
-#menubar{
-	float: right;
-	margin-top: -15px;
-}
-
 .navitem{
 	display: inline-block;
-	margin-left: 8px;
-	float: left;
-	margin-top:38px;
+	margin-right: 30px;
+	float: right;
+	font-size: 1.5em;
+	margin-top:25px;
+	max-width: 190px;
+
 }
 
 .navitem a{
 	text-decoration: none;
-	padding: 0px 15px;
-	font: bold 1.6em 'Markazi Text', serif;
+	display: block;
+	font: bold 1.4em 'Markazi Text', serif;
 	color:#252556;
-	width: 150%;
+	width: 130%;
 	text-align: center;
 	border-radius: 8px;
+	
+  
 }
-
-
 
 .navitem a:hover{
   background-color: #ddd;
@@ -165,58 +162,3 @@ header::after{
 .books li{
 	list-style-position: inside;
 }
-
-
-.flexitem{
-	display: flex;
-}
-
-.flexitem p{
-	text-align: center;
-}
-
-
-.flexitem div{
-	padding: 0 146px;
-}
-
-
-
-@media (max-width: 1600px){
- 
- .navitem{
- 	display: block;
- 	width: 100%;
- 	text-align: center;
- }
-
-}
-
-@media (max-width: 1200px){
-	.herobody{
-		display: block;
-		width: 100%;
-	}
-
-	.heroface{
-		margin-right: 160px;
-	}
-
-	.flexitem{
-		display: block;
-	}
-
-	.flexitem div{
-		width:148px;
-	}
-
-	.flexitem p{
-		width:128px;
-		text-align: center;
-	}
-}
-}
-
-
-
-
