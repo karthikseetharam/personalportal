@@ -58,6 +58,7 @@
 
 hr{
 	clear: both;
+	width: 100%;
 }
 
 .herobody{
@@ -184,6 +185,9 @@ header::after{
 
 @media (max-width: 1600px){
  
+ #outer{
+ 	max-width: 100%;
+ }
  .navitem{
  	display: block;
  	width: 100%;
@@ -199,7 +203,8 @@ header::after{
 	}
 
 	.heroface{
-		margin-right: 160px;
+		display: none;
+		
 	}
 
 	.flexitem{
@@ -208,6 +213,7 @@ header::after{
 
 	.flexitem div{
 		width:148px;
+		margin: 0 auto;
 	}
 
 	.flexitem p{
