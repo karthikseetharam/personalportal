@@ -1,12 +1,14 @@
+*{
+	font:'Markazi Text', serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 #outer {
    margin:0 auto; 
    display: block;
    max-width: 80%;
-}
-
-*{
-	font:'Markazi Text', serif;
-	box-sizing: border-box;
 }
 
 #logo{
@@ -19,10 +21,10 @@
 	clear: both;
 }
 
-#menuheader{
-   size:50%;
-   float: left;   
+.minilogo{
+	display: none;
 }
+
 
 #menubar{
 	float: right;
@@ -34,6 +36,7 @@
 	margin-left: 8px;
 	float: left;
 	margin-top:38px;
+
 }
 
 .navitem a{
@@ -46,8 +49,6 @@
 	border-radius: 8px;
 }
 
-
-
 .navitem a:hover{
   background-color: #ddd;
   color: black;
@@ -56,9 +57,68 @@
   transition-duration: ease-out;
 }
 
+@media (max-width: 1000px){
+
+	#menubar ul{
+		display: table;
+		margin: 0 auto;
+	}
+	
+	.navitem{
+		margin-left: 0px;
+		margin-top:20px;
+		/*float: none;*/
+	}
+
+	.navitem a{
+		padding: 0px 15px;
+	}
+
+	.navitem::last-child{
+		margin-bottom: 5px;
+	}
+
+
+	.minilogo{
+		display: block;
+		width: auto;
+	}
+	
+	.minilogo img{
+		display: block;
+		margin: 0 auto;
+		width: auto;
+		text-align: center;
+	}
+
+	.logo{
+		display: none;
+	}
+
+	#logo{
+		float: none;
+	}
+
+	#menubar{
+	float: none;
+	}
+
+}
+
+
+@media (max-width: 450px){
+	.navitem{
+		margin-left: 0px;
+		margin-top:20px;
+		float: none;
+	}
+
+}
+
 hr{
 	clear: both;
 	width: 100%;
+	margin: 5px 0px;
 }
 
 .herobody{
@@ -66,6 +126,7 @@ hr{
 	width: 50%;
 	font: 1.3em 'Markazi Text', serif;
 	/*font-size: 1.3em;*/
+	padding: 30px;
 }
 
 .heroface{
@@ -76,17 +137,21 @@ hr{
 	border:3px;
 	border-style: groove;
 }
+
 .highlighter{
 	color: red;
 }
+
 .bottomspacer{
-margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .gridcontainer{
 	width: 100%;
 	/*background-image: url("../images/giftly.png");*/
 	background-color: #F1EFEE;
+	padding-bottom: 12px;
+	margin-bottom: 8px;
 }
 
 .gridheader{
@@ -108,13 +173,11 @@ margin-bottom: 20px;
 	text-decoration: none;
 }
 
-
 .gridcol::after{
 content: "";
 display:table;
 clear: both;
 }
-
 
 h3 {
 	text-align: center;
@@ -126,7 +189,6 @@ header::after{
 	content: "";
 	display: table;
 	clear: both;
-	margin-bottom: 50px;
 }
 
 .followme{
@@ -142,16 +204,17 @@ header::after{
 	display: grid;
 	grid-template-columns: 30% 40% 30%;
   	grid-template-rows: 40% 60%;
-  	grid-gap: 10px;
+  	grid-gap: 2px;
+  	padding-bottom: 10px;
 }
 
 .grid_item:first-child {
-	grid-column: 1 / 2;
+	grid-row: 1 / span 2;
 }
 
 .grid_item:nth-child(3){
-	background-color: black;
-
+	background-color: #666060;
+	width: 100%
 }
 
 .grid_item p{	
@@ -163,40 +226,56 @@ header::after{
 	float: right;
 }
 
+.grid_item img{
+	display: block;
+	width: 100%;
+}
+
 .books li{
 	list-style-position: inside;
 }
 
-
 .flexitem{
 	display: flex;
+	box-sizing: border-box;
 }
 
 .flexitem p{
 	text-align: center;
+	box-sizing: border-box;
 }
-
 
 .flexitem div{
-	padding: 0 146px;
+	width: 33%;
+	box-sizing: border-box;
 }
 
+.flexitem div img{
+	display: block;
+	margin: auto;
+}
 
+.flexitem div a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.flexitem div a:hover{
+	color:red;
+}
 
 @media (max-width: 1600px){
- 
  #outer{
  	max-width: 100%;
  }
  .navitem{
  	display: block;
- 	width: 100%;
  	text-align: center;
  }
 
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1000px){
 	.herobody{
 		display: block;
 		width: 100%;
@@ -204,7 +283,6 @@ header::after{
 
 	.heroface{
 		display: none;
-		
 	}
 
 	.flexitem{
@@ -220,7 +298,15 @@ header::after{
 		width:128px;
 		text-align: center;
 	}
-}
+
+	.flexitem div img{
+		padding-left: 0px;
+	}
+
+	.followmelabel{
+		display: none;
+	}
+
 }
 
 
