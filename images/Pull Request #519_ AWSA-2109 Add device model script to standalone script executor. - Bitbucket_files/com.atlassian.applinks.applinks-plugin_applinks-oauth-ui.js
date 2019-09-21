@@ -1,4 +1,0 @@
-;
-/* module-key = 'com.atlassian.applinks.applinks-plugin:applinks-oauth-ui', location = 'js/oauth-dialog.js' */
-(function(c,a,b){AppLinks.authenticateRemoteCredentials=function(d,f,e){c(".applinks-error").remove();new b(d).onSuccess(f).onFailure(e).open()}})(require("applinks/lib/jquery"),require("applinks/common/events"),require("applinks/feature/oauth-callback"));;
-//# sourceMappingURL=/download/batch/com.atlassian.applinks.applinks-plugin:applinks-oauth-ui/com.atlassian.applinks.applinks-plugin:applinks-oauth-ui.js.map?_statichash=d41d8cd98f00b204e9800998ecf8427e-CDN%2F-1609296852%2Fcad3c23%2F10%2F5.4.2
